@@ -9,6 +9,7 @@
   - Tips page
   - About page
 - Feel free to explore the website! 
+https://eatlon-munch.netlify.app/
 <hr>
 
 Developed with HTML, CSS, JavaScript, Bootstrap, jQuery
