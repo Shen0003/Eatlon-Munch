@@ -8,3 +8,6 @@ Webpages:
 - Recipes page
 - Tips page
 - About page
+<hr>
+
+Developed with HTML, CSS, JavaScript, Bootstrap, jQuery
