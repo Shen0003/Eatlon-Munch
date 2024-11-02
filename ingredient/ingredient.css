@@ -1,0 +1,278 @@
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #f3f4f6;
+    color: #333;
+    height: 100%;
+    margin: auto;
+    padding: auto;
+}
+.introduction{
+    margin-top: 150px;
+}
+.container {
+    margin-top: 150px;
+    max-width: 1000px;
+    margin-top: auto;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.image {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.guidelines, .recipes {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.guidelines h3{
+    text-align: left;
+}
+
+.guidelines h2, .recipes h2 {
+    border-bottom: 2px solid #f9d90a;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.dish {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-right: 200px;
+}
+
+.dish img {
+    width: 150px;
+    margin-left: 120px;
+    margin-right: 80px;
+    border-radius: 10px;
+    height: 180px;
+    
+}
+
+.dish-description {
+    max-width: 600px;
+}
+
+.dish-description h3 {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.dish-description p {
+    margin: 0;
+    font-size: 18px;
+}
+.back-button {
+display: inline-block;
+padding: 10px 20px;
+font-size: 16px;
+color: #ffffff;
+background-color: rgb(25, 0, 255);
+border-radius: 5px;
+text-decoration: none;
+transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+background-color: rgb(244, 241, 241);
+text-align: center;
+}
+.container_seafood {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.dishes_seafood h2{
+    text-align:left;
+}
+h1, h2, h3 {
+    text-align: center;
+    color: #2c3e50;
+    font-weight: bold;
+}
+.intro, .tips, .dishes {
+    margin-bottom: 30px;
+}
+.dishes_seafood img {
+    width: 100%;
+    height: 150px;
+    max-width: 300px;
+    margin: 10px;
+    border-radius: 8px;
+}
+.dishes_seafood {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.dish_seafood {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.dish_seafood h3 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+.guidelines_seafood {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.guideline_seafood {
+    flex: 1 1 45%;
+    margin: 10px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.guideline_seafood img {
+    width: 100%;
+    max-height: 300px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+.container_vege {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.benefits_vege h1{
+    font-size: xx-large;
+    text-align: center;
+}
+h1, h2, h3 {
+    color: #1b5e20;
+    text-align: center;
+}
+.intro p{
+    font-weight: bolder;
+    text-align: center;
+}
+.intro, .benefits_vege, .dishes_vege {
+    margin-bottom: 40px;
+}
+.intro, .benefits_vege, .dishes_vege {
+    padding: 40px 20px;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 20px;
+}
+.benefits_vege {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+.benefit_vege {
+    background-color: #e8f5e9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+.benefits_vege img{
+    width: 100%;
+    height: 150px;
+    max-width: 350px;
+    margin: 10px;
+    border-radius: 8px;
+}
+.dishes_vege {
+    display: grid;
+    grid-template-columns: repeat(fit,minmax(250px, 1fr));
+    gap: 20px;
+}
+.dish_vege {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+.dish_vege img {
+    max-width: 100%;
+    max-height: 150px;
+    border-radius: 10px;
+}
+.dish_vege {
+    background-color: #e8f5e9;
+}
+.ingredient-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 80px;
+
+}
+.ingredient-card {
+    width: 250px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-color: #fff;
+    transition: transform 0.2s;
+}
+.ingredient-card:hover {
+    transform: scale(1.05);
+}
+.ingredient-card img {
+    width: 100%;
+    max-height: 140px;
+    height: auto;
+}
+.ingredient-card h2 {
+    font-size: 24px;
+    margin: 16px 0;
+    color: #000;
+}
+.ingredient-card a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    padding: 16px;
+    background-color: #ffcc00;
+    border-radius: 0 0 8px 8px;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+.ingredient-card a:hover {
+    background-color: #ffa500;
+}

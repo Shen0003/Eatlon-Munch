@@ -1,0 +1,273 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(66, 63, 66, 0.6);
+}
+
+.container-form {
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    border-radius: 8px;
+    padding: 30px;
+    margin: 0 auto;
+    background-color: rgb(254, 254, 254);
+    box-shadow: 0 5px 10px rgba(52, 50, 50, 0.6);
+    margin-top: 130px;
+    margin-bottom: 50px;
+}
+
+.container-form header {
+    position: relative;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(0, 0 , 0);
+}
+
+.container-form header::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    height: 3px;
+    width: 27px;
+    border-radius: 10px;
+    background-color: rgba(101, 90, 101, 0.6);
+
+}
+
+.container-form form {
+    position: relative;
+    margin-top: 16px;
+    min-height: 490px;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+}
+
+.container-form form .first-form {
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    transition: 0.3s ease;
+}
+
+.container-form form .second-form {
+   opacity: 0;
+   pointer-events: none;
+   transform: translateX(100%);
+}
+
+form.see-second-form .second-form {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateX(0%);
+
+}
+
+form.see-second-form .first-form {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(-100%);
+
+}
+
+.container-form form .title {
+    font-size: 16px;
+    font-weight: 450px;
+    margin: 6px 0;
+    margin-bottom: 8px;
+    color: rgb(0, 0 , 0);
+}
+
+.container-form form .fields {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 4px 0;
+    flex-wrap: wrap;
+    width: 100%
+}
+
+.container-form form .second-fields {
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 15px; 
+}
+
+.container-form form .info-input {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.container-form form .second-fields textarea {
+    resize: vertical; 
+    min-height: 100px; 
+}
+
+form .fields .info-input {
+    display: flex;
+    width: calc(100% /3 - 15px);
+    flex-direction: column;
+    margin: 4px 0;
+}
+
+form .second-fields .info-input {
+    display: grid;
+    gap: 10px; 
+}
+.info-input label {
+    font-size: 12px;
+    font-weight: 450px;
+    color: rgb(0, 0 , 0);
+}
+
+.info-input input, textarea{
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(0, 0 , 0);
+    border-radius: 5px;
+    border: 1px solid rgb(111, 105, 105);
+    height: 42px;
+    margin: 8px 0;
+    padding: 0 10px;
+}
+.info-input input:is(:focus, :valid) {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.0.1);
+}
+
+.container-form form button, .back, .next {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    max-width: 200px;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    background-color: rgb(241, 228, 241);
+    margin: 25px 0;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.container-form form button, .back, .next {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.container-form form button:hover, .back:hover, .next:hover {
+    background-color: rgb(196, 189, 196);
+}
+
+form .multipleBtn {
+    display: flex;
+    align-items: center;
+}
+
+form .multipleBtn button, .back, .next {
+    margin-right: 15px;
+}
+
+/* Adjust for smaller screen */
+@media screen and (max-width: 750px) {
+
+    .container-form {
+        position: relative;
+        max-width: 750px;
+        width: 100%;
+        border-radius: 8px;
+        padding: 30px;
+        margin: 0 15px;
+        background-color: rgb(254, 254, 254);
+        box-shadow: 0 5px 10px rgba(52, 50, 50, 0.6);
+        margin-top: 100px;
+        margin-left: 5px;
+        margin-bottom: 50px;
+    }
+    form .fields .info-input {
+        width: calc(100% / 2 - 15px);
+    }
+    form .second-fields .info-input {
+        grid-template-columns: repeat(2, calc(50% - 7.5px));
+    }
+}
+
+/* Adjust for smaller screen */
+@media screen and (max-width: 550px) {
+    form .fields .info-input {
+        width: 100%;
+    }
+    form .second-fields .info-input {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+.container-cookies {
+    position: fixed;
+    z-index: 9999;
+    bottom: 20px;
+    right: -350px;
+    max-width: 350px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    border-style: dashed groove dashed ;
+    border-color: rgb(0, 0, 0);
+    border-width: 2px;
+    padding: 15px 25px 20px;
+    transition: right 0.4s ease-in;
+}
+
+.container-cookies.show-cookies {
+    right: 20px;
+}
+
+.container-cookies .contents p {
+    font-size: 14px;
+}
+
+.contents p a {
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    
+}
+
+.contents p a:hover {
+    text-decoration: underline ;
+}
+
+.container-cookies .buttons-cookies {
+    margin-top: 16px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-cookies .buttons-cookies button {
+    width: calc(100% / 2 - 30px);
+    padding: 8px 0;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+.container-cookies .buttons-cookies button:hover {
+    background-color: rgb(111, 105, 105);
+}

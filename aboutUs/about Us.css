@@ -1,0 +1,306 @@
+body{
+    height: 100%;
+}
+.about-us{
+    padding-top: 200px;
+    background-color: rgb(255, 255, 255); 
+    color: #000000;
+    text-align: left;
+    background-image: url(../pictures/—Pngtree—western\ food\ etiquette\ studio\ shot_1541672.jpg);
+    background-size: cover;
+    background-position: top;
+}
+.about-us h1{
+    font-size: 35;
+    text-align: center;
+    color:black
+}
+.about-us h3{
+
+    color:#000000;
+    font-size: 25;
+    text-align: center;
+}
+
+.about-us h2, .contact-us h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color:black; /* Gold color for headings */
+}
+
+.about-us p, .contact-us p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    
+}
+.about-us strong {
+    color:black;
+    font-weight:bolder;
+}
+.about-us .container, .feedback{
+    max-width: 800px;
+    margin: 0 auto;
+}
+.form-group {
+    margin-bottom: 20px;
+
+}
+.form-group label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #000000;
+    font-size: bolder;
+}
+.container p{
+    font-size: 18;
+    font-weight: bold;
+}
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #00b6f3;
+    border-radius: 4px;
+    color:black;
+    background-color: rgb(244, 241, 241);
+    font-weight: bold;
+}
+.feedback p{
+    text-align: center;
+}
+.form-group input:focus, .form-group textarea:focus {
+    outline: none;
+    border-color: #f9d90a;
+}
+button[type="submit"] {
+    padding: 12px 20px;
+    font-size: 18px;
+    color: whitesmoke;
+    background-color:rgb(0, 0, 0);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #000000; 
+}
+.rate-us {
+padding: 50px 0;
+background-color: #000000;
+text-align: center;
+}
+
+.rate-us .container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.rate-us h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.star-rating {
+    display: flex;
+    justify-content: center;
+    direction: rtl; /* Reverses the order for RTL star layout */
+}
+
+.star-rating input[type="radio"] {
+    display: none; /* Hides the radio buttons */
+}
+
+.star-rating label {
+    font-size: 40px;
+    color: #ccc; /* Light grey for unselected stars */
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.star-rating input[type="radio"]:checked ~ label {
+    color: #f5c518; /* Yellow for selected stars */
+}
+
+.star-rating input[type="radio"]:checked + label {
+    color: #f5c518;
+}
+
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+    color: #ffdd00; /* Brighter yellow on hover */
+}
+.rate-us{
+    background-color: rgb(244, 241, 241);
+}
+
+.follow-us {
+padding: 50px 0;
+text-align: center;
+background-color: rgb(244, 241, 241 );
+}
+
+.follow-us h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.follow-us .fb-link, .follow-us .ig-link {
+    display: inline-flex;
+    align-items: center;
+    font-size: 18px;
+    color: #3b5998;
+    text-decoration: none;
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 2px solid #3b5998;
+}
+
+.follow-us .fb-link img, .follow-us .ig-link img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.follow-us .fb-link:hover, .follow-us .ig-link:hover {
+    background-color: #3b5998;
+    color: #fff;
+}
+.mission-vision {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #f7f7f7;
+}
+
+.mission-vision .text {
+    width: 50%;
+    text-align: left;
+}
+
+.mission-vision .image {
+    width: 45%;
+    text-align: right;
+}
+
+.mission-vision .image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.mission-vision h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.future-plan {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #e9e9e9;
+}
+
+.future-plan .text {
+    width: 80%;
+    text-align: right;
+}
+
+.future-plan .image {
+    width: 45%;
+    text-align: left;
+}
+
+.future-plan .image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+#navBar {
+    background-color: black;
+    box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.7); /* Fading shadow effect */
+}
+
+.navbar-brand {
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Segoe Print', 'Bradley Hand', Chilanka, TSCu_Comic, casual, cursive;
+    line-height: 1.2em;
+    color: #58575700;
+    text-shadow: 
+        0 0 #ffffff, 
+        0 1.2em wheat;
+    overflow: hidden;
+    transition: .3s;
+}
+
+.navbar-brand:hover {
+    text-shadow: 
+        0 -2.2em #000, 
+        5px 5px wheat;
+    padding: 10px;
+}
+
+.nav-item {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Segoe Print', 'Bradley Hand', Chilanka, TSCu_Comic, casual, cursive;
+    line-height: 1.5em;
+    color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 0 0 wheat;
+    transition: 0.3s;
+    margin-right: 20px;
+}
+
+.nav-item:hover {
+    box-shadow: 0 0 15px #000, 5px 5px wheat;
+    border: white outset;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    display: none;
+    border-radius: 15px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown-hover>.dropdown-toggle:active {
+    pointer-events: none;
+}
+#footer {
+    background-color: rgb(18, 18, 18);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow', sans-serif;
+}
+
+#footer1 {
+    background-color: rgb(18, 18, 18);
+
+}
+
+#footer1 p,
+#footer1 ul {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#footer2 {
+    background-color: black;
+
+}

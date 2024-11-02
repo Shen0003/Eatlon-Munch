@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Culinary Tips - Enhance Your Cooking Skills</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="tips.css" type="text/css">
+  <link rel="stylesheet" href="../reuse_component/navigationBar.css" type="text/css">
+  <link rel="stylesheet" href="../reuse_component/footer.css" type="text/css"/>
+  <link rel="stylesheet" href="../reuse_component/BtnUp.css" type="text/css"/>
+  <img id="topBtn" src="../pictures/up.png" width="100px" height="100px">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  
+</head>
+<body>
+  <div class="navigation">
+    <div class="nav">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3" id="navBar">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html ">Eatlon Munch</a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="mx-auto"></div>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="../news/NewsV10.html">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="../food/food_index.html">Food</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="../ingredient/ingredient_index.html">Ingredients</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="#" id="recipeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Recipes
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="recipeDropdown">
+                                
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item " href="../recipes/Recipe.html">Country &raquo;</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="../recipes/Recipe.html#first">Malaysia</a></li>
+                                        <li><a class="dropdown-item" href="../recipes/Recipe.html#second">America</a></li>
+                                        <li><a class="dropdown-item" href="../recipes/Recipe.html#third">Japan</a></li>
+                                        <li><a class="dropdown-item" href="../recipes/Recipe.html#fourth">France</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="dropdown-item" href="../addRecipe/addRecipe.html">Adding Recipes</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="../tips/tips_index.html">Tips</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="../aboutUs/about Us.html">About</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+  </div> 
+  <header class="hero-section" >
+    <div class="container">
+      <h1 class="display-4">Culinary Tips & Tricks</h1>
+      <p class="lead">Enhance your cooking skills with our expert advice</p>
+    </div>
+  </header>
+
+  <main class="container py-5">
+    <div class="row">
+      <div class="col-lg-3 mb-4">
+        <div class="sticky-top" style="top: 80px;">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Categories</h5>
+              <div class="list-group">
+                <a href="#techniques" class="list-group-item list-group-item-action">Cooking Techniques</a>
+                <a href="#malaysian" class="list-group-item list-group-item-action">Malaysian Cooking</a>
+                <a href="#flavour" class="list-group-item list-group-item-action">Flavour Enhancing</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-9">
+        <section id="techniques" class="mb-5">
+          <h2 class="section-title">Cooking Techniques</h2>
+          <div class="tip-container">
+            <div class="tip-item">
+              <i class="fas fa-fire tip-icon"></i>
+              <h3><a href="tips_searing.html">Master the Art of Searing</a></h3>
+              <p>Learn how to achieve the perfect sear on meats for enhanced flavour and texture. Start with a hot pan and don't overcrowd it.</p>
+            </div>
+            <div class="tip-item">
+              <i class="fas fa-utensils tip-icon"></i>
+              <h3><a href="tips_knifeSkills.html">Improve Your Knife Skills</a></h3>
+              <p>Discover techniques to chop, dice, and julienne like a professional chef. Keep your knives sharp and practice proper grip.</p>
+            </div>
+            <div class="tip-item">
+              <i class="fas fa-temperature-low tip-icon"></i>
+              <h3><a href="tips_braising.html">Perfect Your Braising Technique</a></h3>
+              <p>Learn how to braise meats and vegetables for tender, flavourful results. Low and slow is the key to perfect braising.</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="malaysian" class="mb-5">
+          <h2 class="section-title">Malaysian Cooking</h2>
+          <div class="tip-container">
+            <div class="tip-item">
+              <i class="fas fa-pepper-hot tip-icon"></i>
+              <h3><a href="tips_spices.html">Essential Malaysian Spices</a></h3>
+              <p>Discover the key spices used in Malaysian cuisine and how to use them effectively. Don't forget lemongrass and pandan leaves!</p>
+            </div>
+            <div class="tip-item">
+              <i class="fas fa-concierge-bell tip-icon"></i>
+              <h3><a href="tips_wok.html">Mastering Wok Cooking</a></h3>
+              <p>Learn the techniques for perfect stir-frying in a wok, essential for many Malaysian dishes. High heat and quick movements are crucial.</p>
+            </div>
+            <div class="tip-item">
+              <i class="fas fa-wine-bottle tip-icon"></i>
+              <h3><a href="tips_coconutMilk.html">Cooking with Coconut Milk</a></h3>
+              <p>Explore the various uses of coconut milk in Malaysian cuisine and how to incorporate it into your dishes for rich, creamy flavours.</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="flavour" class="mb-5">
+          <h2 class="section-title">Flavour Enhancing</h2>
+          <div class="tip-container">
+            <div class="tip-item">
+              <i class="fas fa-lemon tip-icon"></i>
+              <h3><a href="tips_flavour.html">Balancing Flavours</a></h3>
+              <p>Learn how to balance sweet, sour, salty, and bitter flavours in your dishes for a more harmonious taste.</p>
+            </div>
+            <div class="tip-item">
+              <i class="fas fa-drumstick-bite tip-icon"></i>
+              <h3><a href="tips_herbs.html">Using Fresh Herbs</a></h3>
+              <p>Discover how to use fresh herbs to enhance the flavour of your dishes. Add them at the right time to preserve their flavour.</p>
+            </div>
+            <div class="tip-item">
+              <i class="fas fa-vial tip-icon"></i>
+              <h3><a href="tips_umami.html">Experiment with Umami</a></h3>
+              <p>Understand the fifth taste, umami, and how to incorporate it into your cooking through ingredients like mushrooms, soy sauce, and tomatoes.</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+  <section class="footer">
+    <footer class="text-center text-white text-lg-start" id="footer">
+        <div class="container p-4" id="footer1">
+            <div class="row">
+                <div class="col-lg-10 col-md-6 col-sm-12">
+                    <h5 class="text-uppercase">Eatlon Munch</h5>
+                    <p>
+                        Welcome to Eatlon Munch, your ultimate destination for culinary delights! We are passionate food enthusiasts dedicated to bringing you the best recipes, cooking tips, and food stories from around the world. Whether you're a seasoned chef or a home cook, our site offers something for everyone. From mouth-watering dishes to innovative cooking techniques, we aim to inspire and elevate your culinary journey. Bon appétit!
+                    </p>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-12">
+                    <h5 class="text-uppercase">Contact Us</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href= "mailto: yongshen8@1utar.my" class="text-white">yongshen8@1utar.my</a>
+                        </li>
+                        <li>
+                            <a href= "mailto: chinhin60@1utar.my" class="text-white">chinhin60@1utar.my</a>
+                        </li>
+                        <li>
+                            <a href= "mailto: zezheng1123@1utar.my" class="text-white">zezheng1123@1utar.my</a>
+                        </li>
+                        <li>
+                            <a href="mailto: kehyiqian0106@1utar.my" class="text-white">kehyiqian0106@1utar.my</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                        <div class="social-media">
+                            <a href="https://www.facebook.com" target="_blank" title="Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://www.instagram.com" target="_blank" title="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://www.youtube.com" target="_blank" title="YouTube">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a href="https://twitter.com" target="_blank" title="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center p-3" id="footer2">
+          © 2024 Copyright:
+          <a class="text-white" href="../index.html">EatlonMunch.com</a>
+        </div>
+    </footer>
+  </section>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+        
+    $(document).ready(function() {
+      var headerHeight = $("#navBar").outerHeight();
+      $(".list-group-item").on('click', function(event) {
+       if (this.hash !== "") {
+          event.preventDefault();
+          var hash = this.hash;
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top - headerHeight 
+          }, 300); 
+        } 
+      });
+
+      $(".tip-item").addClass("fade-in");
+    });
+
+  </script>
+  <script src="../reuse_component/BtnUp.js"></script>
+
+</body>
+</html>

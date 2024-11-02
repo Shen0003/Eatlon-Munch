@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>News</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="NewsV10.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../reuse_component/navigationBar.css" type="text/css"/>
+    <link rel="stylesheet" href="../reuse_component/footer.css" type="text/css"/>
+    <link rel="stylesheet" href="../reuse_component/BtnUp.css" type="text/css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+</head>
+<body>
+    <div class="navigation">
+        <div class="nav">
+            <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3" id="navBar">
+                <div class="container">
+                    <a class="navbar-brand" href="../index.html ">Eatlon Munch</a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav"
+                        aria-controls="navbarNav"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <div class="mx-auto"></div>
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="../index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="../news/NewsV10.html">News</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="../food/food_index.html">Food</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="../ingredient/ingredient_index.html">Ingredients</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-white" href="#" id="recipeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Recipes
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="recipeDropdown">
+                                    
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item " href="../recipes/Recipe.html">Country &raquo;</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="../recipes/Recipe.html#first">Malaysia</a></li>
+                                            <li><a class="dropdown-item" href="../recipes/Recipe.html#second">America</a></li>
+                                            <li><a class="dropdown-item" href="../recipes/Recipe.html#third">Japan</a></li>
+                                            <li><a class="dropdown-item" href="../recipes/Recipe.html#fourth">France</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item" href="../addRecipe/addRecipe.html">Adding Recipes</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="../tips/tips_index.html">Tips</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="../aboutUs/about Us.html">About</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <form class="d-flex" role="search" id="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="input">
+        <button class="btn btn-outline-success" type="submit" id="searchBtn">Search</button>
+    </form>
+    
+    <div class="results">
+        <p id="resKey"></p>
+        <div class="container" id="resultsCon"></div>
+    </div>
+    <img id="topBtn" src="../pictures/up.png" width="100px" height="100px">         
+    <section class="footer">
+        <footer class="text-center text-white text-lg-start" id="footer">
+            <div class="container p-4" id="footer1">
+                <div class="row">
+                    <div class="col-lg-10 col-md-6 col-sm-12">
+                        <h5 class="text-uppercase">Eatlon Munch</h5>
+                        <p>
+                            Welcome to Eatlon Munch, your ultimate destination for culinary delights! We are passionate food enthusiasts dedicated to bringing you the best recipes, cooking tips, and food stories from around the world. Whether you're a seasoned chef or a home cook, our site offers something for everyone. From mouth-watering dishes to innovative cooking techniques, we aim to inspire and elevate your culinary journey. Bon appétit!
+                        </p>
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-sm-12">
+                        <h5 class="text-uppercase">Contact Us</h5>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href= "mailto: yongshen8@1utar.my" class="text-white">yongshen8@1utar.my</a>
+                            </li>
+                            <li>
+                                <a href= "mailto: chinhin60@1utar.my" class="text-white">chinhin60@1utar.my</a>
+                            </li>
+                            <li>
+                                <a href= "mailto: zezheng1123@1utar.my" class="text-white">zezheng1123@1utar.my</a>
+                            </li>
+                            <li>
+                                <a href="mailto: kehyiqian0106@1utar.my" class="text-white">kehyiqian0106@1utar.my</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                            <div class="social-media">
+                                <a href="https://www.facebook.com" target="_blank" title="Facebook">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="https://www.instagram.com" target="_blank" title="Instagram">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="https://www.youtube.com" target="_blank" title="YouTube">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                                <a href="https://twitter.com" target="_blank" title="Twitter">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center p-3" id="footer2">
+              © 2024 Copyright:
+              <a class="text-white" href="../index.html">EatlonMunch.com</a>
+            </div>
+        </footer>
+    </section>
+    <script>
+        document.getElementById("search").addEventListener("submit", function(e) {
+            e.preventDefault();
+            retrieve();
+        });
+
+        function retrieve() {
+            const apikey = "pub_50180c025cb1c9acc5048bfc1a84503a4bb44"; // MY API key
+            let keyword = $("#input").val();
+            let resKey = $("#resKey");
+            resKey.html(`Search Result For: ${keyword}`);
+
+            let topic = "food";  // Set the topic
+            let url = `https://newsdata.io/api/1/latest?apikey=${apikey}&q=${keyword}&category=${topic}`;
+            
+            let newList = $("#resultsCon");
+            newList.empty(); // Clear previous results
+
+            $.ajax({
+                url: url,
+                method: 'GET',
+                dataType: 'json',
+                success: function(data) {
+                    console.log(data); // Check the structure of the data
+
+                    if (!data.results || !Array.isArray(data.results) || data.results.length === 0) {
+                        $("#input").val(''); //clear the search field
+                        newList.html('<p>No results found.</p>');
+                        return;
+                    }
+
+                    let row;
+                    let colCount = 0;
+
+                    $.each(data.results, function(index, results) {
+                        if (colCount === 0) {
+                            row = $("<div>").addClass("row mb-3"); // Add margin bottom for spacing between rows
+                        }
+
+                        let col = $("<div>").addClass("col-12 col-sm-12 col-md-6 col-lg-4 mb-3");
+                        let card = $("<div>").addClass("card");
+                        let cardImg = $("<img>").attr("src", results.image_url).addClass("card-img-top");
+                        let cardBody = $("<div>").addClass("card-body");
+                        let cardTitle = $("<h5>").addClass("card-title").css({
+                            "height": "50px",
+                            "overflow": "hidden"
+                        }).html(results.title || 'No Title');
+                        let cardDesc = $("<p>").addClass("card-text").css({
+                            "height": "100px",
+                            "overflow": "hidden"
+                        }).html(results.description || 'No Description');
+                        let viewBtn = $("<a>").attr({
+                            "href": results.link || '#',
+                            "target": "_blank"
+                        }).addClass("btn btn-primary").html("View More");
+
+                        cardBody.append(cardTitle, cardDesc, viewBtn);
+                        card.append(cardImg, cardBody);
+                        col.append(card);
+
+                        row.append(col);
+                        colCount++;
+
+                        if (colCount === 3) {
+                            newList.append(row);
+                            colCount = 0;
+                        }
+                    });
+
+                    if (colCount > 0) {
+                        newList.append(row);
+                    }
+
+                    $("#input").val(''); //clear the search field
+                },
+                error: function(jqXHR, textStatus, errorThrown) {
+                    console.error("AJAX error: " + textStatus + ' : ' + errorThrown);
+                    newList.html('<p>Error fetching results. Please try again later.</p>');
+                }
+            });
+        }
+
+        // Update the event listener to use jQuery
+        $("#search").on("submit", function(e) {
+            e.preventDefault();
+            retrieve();
+        }); retrieve();
+    </script>
+    <script src="../reuse_component/BtnUp.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

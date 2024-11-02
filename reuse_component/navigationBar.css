@@ -1,0 +1,63 @@
+#navBar {
+    background-color: black;
+    box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.7); /* Fading shadow effect */
+}
+
+.navbar-brand {
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Segoe Print', 'Bradley Hand', Chilanka, TSCu_Comic, casual, cursive;
+    line-height: 1.2em;
+    color: #58575700;
+    text-shadow: 
+        0 0 #ffffff, 
+        0 1.2em wheat;
+    overflow: hidden;
+    transition: .3s;
+}
+
+.navbar-brand:hover {
+    text-shadow: 
+        0 -2.2em #000, 
+        5px 5px wheat;
+    padding: 10px;
+}
+
+.nav-item {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Segoe Print', 'Bradley Hand', Chilanka, TSCu_Comic, casual, cursive;
+    line-height: 1.5em;
+    color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 0 0 wheat;
+    transition: 0.3s;
+    margin-right: 20px;
+}
+
+.nav-item:hover {
+    box-shadow: 0 0 15px #000, 5px 5px wheat;
+    border: white outset;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    display: none;
+    border-radius: 15px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown-hover>.dropdown-toggle:active {
+    pointer-events: none;
+}

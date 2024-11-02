@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Eatlon Munch</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" href="reuse_component/navigationBar.css" type="text/css"/>
+    <link rel="stylesheet" href="reuse_component/footer.css" type="text/css"/>
+    <link rel="stylesheet" href="reuse_component/BtnUp.css" type="text/css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <div class="navigation">
+        <div class="nav">
+            <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3" id="navBar">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html ">Eatlon Munch</a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav"
+                        aria-controls="navbarNav"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <div class="mx-auto"></div>
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="news/NewsV10.html">News</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="food/food_index.html">Food</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="ingredient/ingredient_index.html">Ingredients</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-white" href="#" id="recipeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Recipes
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="recipeDropdown">
+                                    
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item " href="recipes/Recipe.html">Country &raquo;</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="recipes/Recipe.html#first">Malaysia</a></li>
+                                            <li><a class="dropdown-item" href="recipes/Recipe.html#second">America</a></li>
+                                            <li><a class="dropdown-item" href="recipes/Recipe.html#third">Japan</a></li>
+                                            <li><a class="dropdown-item" href="recipes/Recipe.html#fourth">France</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item" href="addRecipe/addRecipe.html">Adding Recipes</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="tips/tips_index.html">Tips</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="aboutUs/about Us.html">About</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="section1">
+        <div class="main">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 col-12 text-center">
+                        <img id="spoon" src="pictures/spoon.png" class="img-fluid" alt="Spoon">
+                    </div>
+                    <div class="col-lg-4 col-12 text-center">
+                        <div class="card">
+                            <div class="card-side card-front">
+                                <p id="mainTxt1">"Eat Well,<br>Sleep Well"<br>Bon Appétit!</p>
+                            </div>
+                            <div class="card-side card-back">
+                                <p id="mainTxt2">
+                                    Simpler Recipe<br>
+                                    Various Choices<br>
+                                    Updated Ways
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-12 text-center">
+                        <img id="fork" src="pictures/fork.png" class="img-fluid" alt="Fork">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section2">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-6 col-md-12 col-sm-12 parallax-item">
+                    <h2 class="carouselTitle">Popular Cuisine</h2>
+                    <div class="carousel slide" data-bs-ride="true" id="foodCarousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="1000">
+                                <img src="pictures/burger1.jpg" class="d-block w-100" alt="burger">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h2>Burger</h2>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                                <img src="pictures/dimsum4.jpg" class="d-block w-100" alt="dimsum">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h2>DimSum</h2>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="pictures/nasilemak1.jpg" class="d-block w-100" alt="nasilemak">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h2>Nasi Lemak</h2>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="pictures/thosai.jpg" class="d-block w-100" alt="thosai">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h2>Thosai</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#foodCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#foodCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 parallax-item">
+                    <h2 class="carouselTitle">Popular Ingredients</h2>
+                    <div class="carousel slide" data-bs-ride="true" id="ingCarousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="1000">
+                                <img src="pictures/cinnamon.jpg" class="d-block w-100" alt="cinnamon">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h2>Cinnamon</h2>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                                <img src="pictures/clove.jpg" class="d-block w-100" alt="clove">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h2>Clove</h2>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="pictures/nutmeg.jpg" class="d-block w-100" alt="nutmeg">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h2>Nutmeg</h2>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="pictures/staranise.jpg" class="d-block w-100" alt="staranise">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h2>Star Anise</h2>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="pictures/green.jpg" class="d-block w-100" alt="greencardamom">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h2>Green Cardamom</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#ingCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#ingCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-12 col-md-12 col-sm-12 parallax-item">
+                    <div class="aboutBox">
+                        <h2>What Do We Do?</h2>
+                        <p id="aboutTxt">Welcome to Eatlon Munch, your ultimate destination for culinary delights! We are passionate food enthusiasts dedicated to bringing you the best recipes, cooking tips, and food stories from around the world. Whether you're a seasoned chef or a home cook, our site offers something for everyone. From mouth-watering dishes to innovative cooking techniques, we aim to inspire and elevate your culinary journey. Bon appétit!</p>
+                        <br>
+                        <div class="social-share-buttons">
+                            <h2 id="shareTxt">Share Our Website!</h2>
+                            <div class="fb-share-button" 
+                                data-href="https://eatlon-munch.netlify.app/" 
+                                data-layout="button_count">
+                            </div>
+                            <div class="twitter-share-button">
+                                <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" 
+                                class="twitter-share-button" 
+                                data-text="Check out this amazing website!" 
+                                data-url="https://eatlon-munch.netlify.app/" 
+                                data-show-count="false">Tweet</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>        
+    <div class="section3">
+        <div class="row">
+            <div class="container-fluid" id="quotes">
+                <div class="row">
+                    <div class="col-12 parallax-item" id="qItemTitle">
+                        <h2 class="quoteTitle">Quotes</h2>
+                    </div>
+                    <div class="col-12 parallax-item" id="qItem1">
+                        <h1>"One cannot think well, love well, sleep well, if one has not dined well."</h1>
+                        <br>
+                        <h4>- Virginia Woolf</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 parallax-item" id="qItem2">
+                        <h1>"The secret of success in life is to eat what you like and let the food fight it out inside."</h1>
+                        <br>
+                        <h4>- Mark Twain</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 parallax-item" id="qItem3">
+                        <h1>"Food is not rational. Food is culture, habit, craving, and identity."</h1>
+                        <br>
+                        <h4>- Jonathan Safran Foer</h4>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+    <img id="topBtn" src="pictures/up.png" width="100px" height="100px">         
+    <section class="footer">
+        <footer class="text-center text-white text-lg-start" id="footer">
+            <div class="container p-4" id="footer1">
+                <div class="row">
+                    <div class="col-lg-10 col-md-6 col-sm-12">
+                        <h5 class="text-uppercase">Eatlon Munch</h5>
+                        <p>
+                            Welcome to Eatlon Munch, your ultimate destination for culinary delights! We are passionate food enthusiasts dedicated to bringing you the best recipes, cooking tips, and food stories from around the world. Whether you're a seasoned chef or a home cook, our site offers something for everyone. From mouth-watering dishes to innovative cooking techniques, we aim to inspire and elevate your culinary journey. Bon appétit!
+                        </p>
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-sm-12">
+                        <h5 class="text-uppercase">Contact Us</h5>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href= "mailto: yongshen8@1utar.my" class="text-white">yongshen8@1utar.my</a>
+                            </li>
+                            <li>
+                                <a href= "mailto: chinhin60@1utar.my" class="text-white">chinhin60@1utar.my</a>
+                            </li>
+                            <li>
+                                <a href= "mailto: zezheng1123@1utar.my" class="text-white">zezheng1123@1utar.my</a>
+                            </li>
+                            <li>
+                                <a href="mailto: kehyiqian0106@1utar.my" class="text-white">kehyiqian0106@1utar.my</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                            <div class="social-media">
+                                <a href="https://www.facebook.com" target="_blank" title="Facebook">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="https://www.instagram.com" target="_blank" title="Instagram">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="https://www.youtube.com" target="_blank" title="YouTube">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                                <a href="https://twitter.com" target="_blank" title="Twitter">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center p-3" id="footer2">
+              © 2024 Copyright:
+              <a class="text-white" href="index.html">EatlonMunch.com</a>
+            </div>
+        </footer>
+    </section>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var parallaxItems = document.querySelectorAll('.parallax-item');
+
+            function revealParallax() {
+                var scrollPosition = window.pageYOffset;
+
+                parallaxItems.forEach(function(item) {
+                var itemTop = item.getBoundingClientRect().top + window.pageYOffset;
+                var itemHeight = item.offsetHeight;
+
+                if (scrollPosition > itemTop - window.innerHeight + (itemHeight / 2)) {
+                    item.classList.add('visible');
+                } else {
+                    item.classList.remove('visible');
+                }
+                });
+            }
+
+            window.addEventListener('scroll', revealParallax);
+            revealParallax();
+        });
+
+
+    </script>
+    <script src="reuse_component/BtnUp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- this is Facebook sdk plugin -->
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v11.0" nonce="abcd1234"></script> 
+    <!-- this is Twitter plugin -->
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</body>
+</html>

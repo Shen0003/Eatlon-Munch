@@ -1,0 +1,360 @@
+
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background: #222;
+    overflow-x: hidden;
+}
+
+.section1 {
+    padding-top: 30px;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    background-image: url("pictures/sec1.1.jpg");
+    background-size: cover;
+}
+
+.section2 {
+    margin-top: 20px;
+    width: 100%;
+    position: relative; 
+    object-fit: cover;
+    background-image: url("pictures/sec2.1.jpg");
+    background-size: cover;
+
+}
+
+.section3 {
+    margin-top: 20px;
+    width: 100%;
+    position: relative; 
+    object-fit: cover;
+    background-image: url("pictures/sec1.3.jpg");
+    background-size: cover;
+}
+
+.section1, .section2, .section3 {
+    position: relative;
+}
+
+.section3::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100px;
+    background: linear-gradient(to bottom, rgba(34,34,34,0), rgba(34,34,34,1));
+    pointer-events: none;
+}
+
+.section1::after, .section2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 50px;
+    background: linear-gradient(to bottom, rgba(34,34,34,0), rgba(34,34,34,1));
+    pointer-events: none;
+}
+
+#navBar {
+    background-color: black;
+    box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.7); /* Fading shadow effect */
+}
+
+.navbar-brand {
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Segoe Print', 'Bradley Hand', Chilanka, TSCu_Comic, casual, cursive;
+    line-height: 1.2em;
+    color: #58575700;
+    text-shadow: 
+        0 0 #ffffff, 
+        0 1.2em wheat;
+    overflow: hidden;
+    transition: .3s;
+}
+
+.navbar-brand:hover {
+    text-shadow: 
+        0 -2.2em #000, 
+        5px 5px wheat;
+    padding: 10px;
+}
+
+.nav-item {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Segoe Print', 'Bradley Hand', Chilanka, TSCu_Comic, casual, cursive;
+    line-height: 1.5em;
+    color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 0 0 wheat;
+    transition: 0.3s;
+    margin-right: 20px;
+}
+
+.nav-item:hover {
+    box-shadow: 0 0 15px #000, 5px 5px wheat;
+    border: white outset;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    display: none;
+    border-radius: 15px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown-hover>.dropdown-toggle:active {
+    pointer-events: none;
+}
+
+#main {
+    margin-top: 118px;
+}
+
+#mainTxt1, #mainTxt2 {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    word-wrap: break-word;
+    text-shadow: 
+        3px 3px 0px black, /* Horizontal and vertical offset, blur radius, color */
+        -3px -3px 0px black,
+        3px -3px 0px black,
+        -3px 3px 0px black;
+}
+
+#mainTxt1 {
+    font-size: 50px;
+    font-family: 'Segoe Print', 'Bradley Hand', Chilanka, TSCu_Comic, casual, cursive;
+    font-weight: bold;
+}
+
+#mainTxt2 {
+    font-size: 50px;
+    font-family: 'Segoe Print', 'Bradley Hand', Chilanka, TSCu_Comic, casual, cursive;
+    font-weight: normal;
+    text-decoration: underline;
+}
+
+.card {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    margin: 0 auto;
+    margin-top: 80px;
+    max-width: 500px;
+    border-radius: 20px;
+}
+
+.card-side {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: 5px 10px 8px 10px lightgray;
+    border: white outset;
+    padding: 20px;
+    background-color: #222;
+    background-image: url("pictures/wood.jpg");
+    background-size: cover;
+}
+
+.card-back {
+    transform: rotateY(180deg);
+}
+
+.card:hover {
+    transform: rotateY(180deg);
+}
+
+#spoon, #fork {
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+#foodCarousel, #ingCarousel {
+    margin-top: 33px;
+    margin-left: 33px;
+    margin-right: 33px;
+    margin-bottom: 33px;
+    text-align: center;
+    border: white outset 10px;
+    position: relative;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    font-family: 'Segoe Print', 'Bradley Hand', Chilanka, TSCu_Comic, casual, cursive;
+    font-weight: bold;
+    text-shadow: 
+    2px 2px 0px black, /* Horizontal and vertical offset, blur radius, color */
+    -2px -2px 0px black,
+    2px -2px 0px black,
+    -2px 2px 0px black;
+}
+
+.carouselTitle {
+    margin-top: 20px;
+    margin-bottom: 0;
+    padding: 0;
+    text-align: center;
+    color: #222;
+    font-family: 'Brush Script MT';
+    font-weight: bold;
+    font-size: 50px;
+    text-shadow: 
+    2px 2px 0px white, /* Horizontal and vertical offset, blur radius, color */
+    -2px -2px 0px white,
+    2px -2px 0px white,
+    -2px 2px 0px white;
+    text-decoration: underline;
+}
+
+.aboutBox {
+    text-align: center;
+    margin-top: 45px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color: #222; 
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 150px;
+    padding-top: 80px;
+    border-radius: 50px;
+    height: 80%; 
+    border: white outset 10px;
+    border-radius: 50px;
+    word-wrap: break-word;
+    background-image: url("pictures/bg1.jpg");
+    background-size: cover;
+}
+  
+.aboutBox h2 {
+    font-size: 50px;
+    text-decoration: underline;
+    font-family: 'Brush Script MT';
+    font-weight: bold;
+    margin-top: 0;
+    word-wrap: break-word;
+    text-shadow: 
+    2px 2px 0px white, /* Horizontal and vertical offset, blur radius, color */
+    -2px -2px 0px white,
+    2px -2px 0px white,
+    -2px 2px 0px white;
+}
+  
+.aboutBox p {
+    font-size: 22px;
+    margin-bottom: 0;
+    word-wrap: break-word;
+    font-family: 'Segoe Print', 'Bradley Hand', Chilanka, TSCu_Comic, casual, cursive;
+    font-weight: normal;
+    text-shadow: 
+    2px 2px 0px white, /* Horizontal and vertical offset, blur radius, color */
+    -2px -2px 0px white,
+    2px -2px 0px white,
+    -2px 2px 0px white;
+ }
+  
+#shareTxt {
+    margin-top: 10px;
+ }
+
+.fb-share-button {
+    margin-bottom: 10px;
+}
+
+
+.parallax-item {
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease;
+    font-family: 'Segoe Print', 'Bradley Hand', Chilanka, TSCu_Comic, casual, cursive;
+    font-weight: normal;
+  }
+  
+.parallax-item.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+ 
+
+.quoteTitle {
+    margin-top: 20px;
+    margin-bottom: 0;
+    padding: 0;
+    text-align: center;
+    color: #222;
+    font-family: 'Brush Script MT';
+    font-weight: bold;
+    font-size: 50px;
+    text-shadow: 
+    2px 2px 0px white, /* Horizontal and vertical offset, blur radius, color */
+    -2px -2px 0px white,
+    2px -2px 0px white,
+    -2px 2px 0px white;
+    text-decoration: underline;
+}
+
+
+#qItem1, #qItem2, #qItem3 {
+    object-fit: cover;
+    font-size: 40px;
+    text-align: center;
+    color: #222;
+    background-color: wheat;
+    padding: 20px;
+    width: 80%;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border: white outset 10px;
+    border-radius: 50px;
+    background-image: url("pictures/bg2.jpg");
+    background-size: cover;
+    text-shadow: 
+    2px 2px 0px white, /* Horizontal and vertical offset, blur radius, color */
+    -2px -2px 0px white,
+    2px -2px 0px white,
+    -2px 2px 0px white;
+}
+
+#qItem3 {
+    margin-bottom: 50px;
+    
+}
+
+
+
+
+

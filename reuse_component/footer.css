@@ -1,0 +1,39 @@
+#footer {
+    background-color: rgb(18, 18, 18);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow', sans-serif;
+    position: relative;
+    flex-shrink: 0;
+}
+
+
+#footer1 {
+    background-color: rgb(18, 18, 18);
+
+}
+
+#footer1 p,
+#footer1 ul {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#footer2 {
+    background-color: black;
+
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-media a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.social-media a:hover {
+    color: #1e90ff;
+}

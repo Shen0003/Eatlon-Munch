@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food - Italian Cuisine</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="food.css" rel="stylesheet" type="text/css">
+    <img id="topBtn" src="../pictures/up.png" width="100px" height="100px">
+    <link rel="stylesheet" href="../reuse_component/BtnUp.css" type="text/css"/>
+    <link rel="stylesheet" href="../reuse_component/footer.css" type="text/css"/>  
+    <link rel="stylesheet" href="../reuse_component/navigationBar.css" type="text/css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+</head>
+<body>
+    <div class="navigation">
+        <div class="nav">
+            <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3" id="navBar">
+                <div class="container">
+                    <a class="navbar-brand" href="../index.html ">Eatlon Munch</a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav"
+                        aria-controls="navbarNav"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <div class="mx-auto"></div>
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="../index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="../news/NewsV10.html">News</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="../food/food_index.html">Food</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="../ingredient/ingredient_index.html">Ingredients</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-white" href="#" id="recipeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Recipes
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="recipeDropdown">
+                                    
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item " href="../recipes/Recipe.html">Country &raquo;</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="../recipes/Recipe.html#first">Malaysia</a></li>
+                                            <li><a class="dropdown-item" href="../recipes/Recipe.html#second">America</a></li>
+                                            <li><a class="dropdown-item" href="../recipes/Recipe.html#third">Japan</a></li>
+                                            <li><a class="dropdown-item" href="../recipes/Recipe.html#fourth">France</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item" href="../addRecipe/addRecipe.html">Adding Recipes</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="../tips/tips_index.html">Tips</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="../aboutUs/about Us.html">About</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="hero-section">
+        <div class="container text-center">
+            <h1>Italian Cuisine</h1>
+            <p class="lead">Discover the rich flavors of Italy with our authentic pizza, pasta, and risotto recipes.</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2 class="section-title">Top Rated Dishes</h2>
+
+        <div class="card mb-4">
+            <div class="row g-0">
+                <div class="col-md-6">
+                    <img src="../pictures/pizza.jpg" alt="Pizza Margherita" class="img-fluid" style="height: 400px; object-fit: cover;">
+                </div>
+                <div class="col-md-6">
+                    <div class="card-body">
+                        <h3 class="card-title">Pizza Margherita</h3>
+                        <p class="card-text">A classic Neapolitan pizza topped with tomatoes, mozzarella cheese, fresh basil, salt, and extra-virgin olive oil.</p>
+                        <p class="card-text">The popular story is that pizza Margherita was created in 1889 by a pizzaiolo named Raffaele Esposito to honor Queen Margherita of Italy. He made three types of pizza, and the queen liked the one with tomatoes, basil, and mozzarella, which matched the colors of the Italian flag. This pizza was named after her, and there’s a letter from the queen’s staff displayed in Esposito's shop, Pizzeria Brandi. However, later research suggests that this story might not be true, as there's no evidence of the queen's visit and the name "Margherita" only became widely known in the 1930s or 1940s.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-4">
+            <div class="row g-0">
+                <div class="col-md-6 order-md-2">
+                    <img src="../pictures/spaghetti.jpg" alt="Spaghetti Carbonara" class="img-fluid" style="height: 400px; object-fit: cover;">
+                </div>
+                <div class="col-md-6 order-md-1">
+                    <div class="card-body">
+                        <h3 class="card-title">Spaghetti Carbonara</h3>
+                        <p class="card-text">A Roman pasta dish made with eggs, hard cheese, cured pork, and black pepper.</p>
+                        <p class="card-text">Spaghetti Carbonara is a classic Italian pasta dish believed to have originated in Rome in the mid-20th century. The dish features a creamy sauce made from eggs, Pecorino Romano cheese, pancetta or guanciale, and black pepper. One theory suggests it was created during World War II when American soldiers mixed their rations of bacon and eggs with local pasta, while another theory ties it to the "carbonari," Italian charcoal workers who cooked with readily available ingredients over open fires. Regardless of its exact origins, Carbonara has become a popular and beloved dish worldwide for its rich, savory flavor.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-4">
+            <div class="row g-0">
+                <div class="col-md-6">
+                    <img src="../pictures/risotto.jpg" alt="Risotto alla Milanese" class="img-fluid" style="height: 400px; object-fit: cover;">
+                </div>
+                <div class="col-md-6">
+                    <div class="card-body">
+                        <h3 class="card-title">Risotto alla Milanese</h3>
+                        <p class="card-text">A creamy rice dish flavored with saffron, originating from Milan.</p>
+                        <p class="card-text">Risotto alla Milanese is a renowned Italian dish originating from Milan, known for its creamy texture and distinctive golden color. The dish’s main ingredient is Arborio rice, cooked with beef or chicken broth, butter, onions, and Parmesan cheese. The key element that gives Risotto alla Milanese its signature color and flavor is saffron, which has been used since the 16th century. The story goes that saffron was added to risotto in honor of the wedding of a Milanese nobleman, though the precise historical details are debated. Over time, this luxurious dish became a symbol of Milanese cuisine and remains a celebrated classic in Italian cooking.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a href="food_index.html" class="btn btn-primary btn-lg mb-3">Back to Food</a>
+    </div>
+    <section class="footer">
+        <footer class="text-center text-white text-lg-start" id="footer">
+            <div class="container p-4" id="footer1">
+                <div class="row">
+                    <div class="col-lg-10 col-md-6 col-sm-12">
+                        <h5 class="text-uppercase">Eatlon Munch</h5>
+                        <p>
+                            Welcome to Eatlon Munch, your ultimate destination for culinary delights! We are passionate food enthusiasts dedicated to bringing you the best recipes, cooking tips, and food stories from around the world. Whether you're a seasoned chef or a home cook, our site offers something for everyone. From mouth-watering dishes to innovative cooking techniques, we aim to inspire and elevate your culinary journey. Bon appétit!
+                        </p>
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-sm-12">
+                        <h5 class="text-uppercase">Contact Us</h5>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href= "mailto: yongshen8@1utar.my" class="text-white">yongshen8@1utar.my</a>
+                            </li>
+                            <li>
+                                <a href= "mailto: chinhin60@1utar.my" class="text-white">chinhin60@1utar.my</a>
+                            </li>
+                            <li>
+                                <a href= "mailto: zezheng1123@1utar.my" class="text-white">zezheng1123@1utar.my</a>
+                            </li>
+                            <li>
+                                <a href="mailto: kehyiqian0106@1utar.my" class="text-white">kehyiqian0106@1utar.my</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                            <div class="social-media">
+                                <a href="https://www.facebook.com" target="_blank" title="Facebook">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="https://www.instagram.com" target="_blank" title="Instagram">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="https://www.youtube.com" target="_blank" title="YouTube">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                                <a href="https://twitter.com" target="_blank" title="Twitter">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center p-3" id="footer2">
+              © 2024 Copyright:
+              <a class="text-white" href="../index.html">EatlonMunch.com</a>
+            </div>
+        </footer>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../reuse_component/BtnUp.js"></script>
+
+    
+</body>
+</html>

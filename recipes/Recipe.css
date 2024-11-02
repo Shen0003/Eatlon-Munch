@@ -1,0 +1,371 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: hidden; 
+    height: 100%; 
+    width: 100%; 
+}
+
+
+.container-recipe {
+    scroll-snap-type: y mandatory;
+    overflow-y: auto; 
+    overflow-x: hidden; 
+    height: 100vh;
+    width: 100vw; 
+    margin: 0; 
+    padding: 0; 
+}
+
+.container-recipe section {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    align-items: center; 
+    scroll-snap-align: start;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 100%; 
+}
+
+
+.container-recipe .Malaysia {
+    background-image: url('../pictures/Malaysia.jpg');
+    background-size: 1910px 920px; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh; 
+    margin: 0;
+}
+
+
+
+.container-recipe .America{
+    background-image: url("../pictures/America.jpg");
+    background-size: 1910px 920px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh; 
+    margin: 0;
+}
+
+.container-recipe .Japan{
+    background-image: url("../pictures/Japan.jpg");
+    background-size: 1910px 920px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    width: 100%;
+    height: 100vh; 
+}
+
+.container-recipe .France{
+    background-image: url("../pictures/France.jpg");
+    background-size: 1910px 920px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh; 
+    margin: 0;
+}
+
+
+
+.container-recipe .card {
+    position: relative;
+    width: 300px;
+    height: 380px;
+    display: flex;
+    background-color: rgb(248, 248, 248);
+    margin: 50px 10px;
+    padding: 15px 15px;
+    flex-direction: column;
+    box-shadow: 0.5px 10px rgb(216, 10, 10);
+    transition: 0.3s ease-in-out;
+    top: 50px;
+
+}
+
+.container-recipe .card span {
+    position: absolute;
+    bottom: 10px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    cursor: pointer;
+    background-color: rgb(233, 146, 217);
+    padding: 10px 20px;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    text-align: center;
+    white-space: nowrap; 
+}
+
+.container-recipe .card span:hover {
+    background-color: rgb(233, 92, 207);
+}
+
+.container-recipe .card .imageBox
+{
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top: -60px;
+    margin: 0 auto;
+}
+
+.container-recipe .card  img {
+    width: 150px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+    margin-left: 40px; 
+    margin-right: auto;
+    cursor: pointer; 
+}
+
+.imageBox:hover img{
+    transform: scale(1.1);
+}
+
+.word h1 a {
+    font-size: 58px; 
+    font-weight: bold; 
+    font-style: italic; 
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
+    color: rgb(254, 254, 254); 
+    text-align: center; 
+    text-shadow: 1px 1px 4px #000;
+
+}
+
+.container-recipe .card .imageBox h3 {
+    font-size: 15px;
+    padding: 10px;
+}
+
+.container-recipe .card .imageBox p{
+    font-size: 13px;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+
+
+.hideCard {
+    display: none;
+
+}
+
+.popup {
+    position: absolute;
+    top: -150%;
+    left: 49%;
+    transform:translate(-50%,-50%) scale(1.2);
+    opacity:0;
+    width: 1400px;
+    max-height: 100% ;
+    background:#fff;
+    border-radius: 15px;
+    box-shadow:2px 2px 5px 2px rgba(0,0,0,0.15);
+    transition:top 0ms ease-in-out 200ms,
+               opacity 200ms ease-in-out 0ms,
+               transform 200ms ease-in-out 0ms;
+}
+
+.popup.active {
+    top: 55%;
+    opacity:1;
+    transform:translate(-50%,-50%) scale(1);
+    transition:top 0ms ease-in-out 0ms,
+               opacity 200ms ease-in-out 0ms,
+               transform 200ms ease-in-out 0ms;
+}
+
+.popup .head {
+    padding: 0;
+    background:#838f90;
+    text-align:center;
+}
+
+.popup .head p{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+}
+
+.popup .body {
+    text-align:center;
+}
+
+.popup .body .content-box {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+
+}
+
+.popup .body .content-box .column {
+    width: 50%;
+}
+
+.popup .body .conten-box .column  h2 {
+    margin-bottom:10px;
+    color:#222;
+}
+.popup .body .content-box .column br{
+    
+    display: block; 
+    content: ""; 
+    margin-top: 0%; 
+     
+}
+
+.popup .body p {
+    font-size:12px;
+    color:#555;
+    text-align: left;
+  
+}
+
+.popup .body li {
+    margin-bottom: 5px;
+    text-align: left;
+    list-style-type: disc;
+    font-size:12px;
+    
+}
+
+.popup .body .close-btn {
+    padding: 10px;
+    border: 2px solid #888;
+    color:rgb(25, 4, 4);
+    background: rgb(254, 254, 254);
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+
+
+
+
+/* Adjust for smaller screen */
+@media screen and (max-width: 750px) {
+    .container-recipe .Malaysia,
+    .container-recipe .America,
+    .container-recipe .Japan,
+    .container-recipe .France {
+        background-size: 800px 800px; 
+    }
+    
+    .word h1 a {
+        font-size: 18px; 
+    }
+
+    .container-recipe .card {
+        width: 120px;
+        height: 150px;
+        background-color: rgba(0, 0, 0, 0);
+        box-shadow: none;
+        border-color: rgba(0, 0, 0, 0);
+        display: grid;
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .container-recipe .card .imageBox {
+        width: 150px;
+        height: 100px;
+        top: -10px;
+        left: 10px;
+    }
+
+    .container-recipe .card  img {
+        max-width: 70%;
+        height: auto;
+        border-radius: 10px;
+        display: block;
+        margin: 0;
+        padding: 0;
+        cursor: pointer; 
+}
+    .container-recipe .card .imageBox p{
+        visibility: hidden;
+    }
+
+    .container-recipe .card .imageBox h2 p{
+        visibility: visible;
+    }
+    
+    
+    .container-recipe .card .imageBox h3  {
+        display: inline-block;
+        justify-content: space-around;  
+        align-items: center; 
+        color: rgb(253, 253, 253);
+        font-size: 14px;  
+        margin: 0;  
+        padding: 0;
+        width: 70%;
+        left: 100%;
+        padding: 5px 10px;
+        border: 2px solid rgb(254, 254, 254); 
+        background-color: rgb(0, 0, 0); 
+        border-radius: 5px; 
+    }
+   
+    .container-recipe .card span {
+        display: none;
+    }
+    
+   
+}
+
+/* Adjust for smaller screen */
+@media screen and (max-width: 550px) {
+    .container-recipe .Malaysia,
+    .container-recipe .America,
+    .container-recipe .Japan,
+    .container-recipe .France {
+        background-size: 600 600px; 
+        
+    }
+    
+    .word h1 a {
+        font-size: 10px; 
+    }
+
+    .container-recipe .card  img {
+        max-width: 50%;
+        height: auto;
+        border-radius: 10px;
+        display: block;
+        margin: 0;
+        padding: 0;
+        cursor: pointer; 
+}
+}
+
+
+
